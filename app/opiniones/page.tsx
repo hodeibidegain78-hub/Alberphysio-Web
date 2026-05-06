@@ -117,23 +117,89 @@ export default function OpinionesPage() {
           ))}
         </div>
 
-        {/* Editorial Image Break */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="w-full relative h-[400px] md:h-[550px] rounded-[2.5rem] overflow-hidden my-16 group"
-        >
-          <Image
-            src="/images/camilla.jpg"
-            alt="Paciente en consulta"
-            fill
-            className="object-cover transition-transform duration-1000 group-hover:scale-105"
-            referrerPolicy="no-referrer"
-          />
-          <div className="absolute inset-0 bg-slate-900/10 transition-colors duration-500 group-hover:bg-transparent" />
-        </motion.div>
+        {/* Confianza / Trust Split Section */}
+        <div className="my-24 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          {/* IZQUIERDA: Imagen */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative w-full aspect-[4/5] lg:aspect-[3/4] max-w-lg mx-auto lg:max-w-none rounded-[2.5rem] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.08)] group"
+          >
+            <Image
+              src="https://i.ibb.co/DH3HSPNg/Foto-confianza.jpg"
+              alt="Alberto Pinilla trabajando de cerca con deportistas"
+              fill
+              className="object-cover object-[center_30%] scale-105 transition-transform duration-1000 group-hover:scale-110 contrast-[1.1] saturate-[1.1]"
+              referrerPolicy="no-referrer"
+            />
+            {/* Overlay sutil para editorial premium */}
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 via-slate-900/10 to-transparent mix-blend-multiply opacity-80 transition-opacity duration-500 group-hover:opacity-60" />
+            <div className="absolute inset-0 bg-slate-900/5 backdrop-contrast-125 opacity-20" />
+          </motion.div>
+
+          {/* DERECHA: Texto de Confianza */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex flex-col justify-center px-4 md:px-0"
+          >
+            <div className="flex items-center space-x-2 mb-6">
+               <div className="flex text-yellow-500">
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
+              </div>
+              <span className="text-sm font-semibold text-slate-900 mt-0.5">5,0 / 5</span>
+            </div>
+            
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-tight text-slate-900 mb-6 leading-[1.15]">
+              Fisioterapia cercana y <br className="hidden md:block"/><span className="font-medium">enfocada en resultados reales</span>
+            </h2>
+
+            <p className="text-lg md:text-xl text-slate-600 font-light leading-relaxed mb-8 max-w-xl">
+              He acompañado a todo tipo de personas, desde deportistas de alto rendimiento hasta personas con dolor crónico. El objetivo siempre es el mismo: ir a la raíz del problema y devolverte la confianza en tu cuerpo.
+            </p>
+
+            <ul className="space-y-6 mb-12">
+              <li className="flex items-start">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 font-bold text-[11px] mt-1 mr-5">1</span>
+                <div>
+                  <p className="font-semibold text-slate-900 text-lg mb-1">Valoración exhaustiva</p>
+                  <p className="text-slate-500 leading-relaxed font-light">Entendemos el porqué anatómico y biomecánico antes de tratar.</p>
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 font-bold text-[11px] mt-1 mr-5">2</span>
+                <div>
+                  <p className="font-semibold text-slate-900 text-lg mb-1">Aplicación precisa</p>
+                  <p className="text-slate-500 leading-relaxed font-light">Terapia manual experta y readaptación deportiva a medida.</p>
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 font-bold text-[11px] mt-1 mr-5">3</span>
+                <div>
+                  <p className="font-semibold text-slate-900 text-lg mb-1">Autonomía del paciente</p>
+                  <p className="text-slate-500 leading-relaxed font-light">Te damos las herramientas para no depender del fisioterapeuta.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div className="pt-8 border-t border-slate-100 flex items-center gap-12">
+              <div>
+                <p className="text-3xl font-light text-slate-900 mb-1">90<span className="text-slate-400 font-bold">+</span></p>
+                <p className="text-[10px] uppercase font-bold tracking-widest text-slate-400">Pacientes recuperados</p>
+              </div>
+              <div className="w-px h-12 bg-slate-100"></div>
+              <div>
+                <p className="text-3xl font-light text-slate-900 mb-1">100<span className="text-slate-400 font-bold">%</span></p>
+                <p className="text-[10px] uppercase font-bold tracking-widest text-slate-400">Atención personalizada</p>
+              </div>
+            </div>
+
+          </motion.div>
+        </div>
 
         {/* Second Row of Testimonials */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 text-left">
