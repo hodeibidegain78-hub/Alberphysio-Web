@@ -8,42 +8,42 @@ const SERVICES = [
   {
     title: 'Fisioterapia Deportiva',
     description: 'Diagnóstico, tratamiento y prevención de lesiones musculares y articulares derivadas de la práctica deportiva. Orientado a la pronta y segura recuperación del deportista.',
-    img: '/images/Paciente%201.jpg'
+    img: '/images/paciente-1.jpg'
   },
   {
     title: 'Dolor Lumbar y Espalda',
     description: 'Abordaje integral de discopatías, hernias, ciáticas y lumbalgias de larga evolución, combinando terapia manual y ejercicio terapéutico específico.',
-    img: '/images/Paciente%201%20boca%20abajo.jpg'
+    img: '/images/paciente-1-abajo.jpg'
   },
   {
     title: 'Cervicalgia y Cuello',
     description: 'Tratamiento de contracturas, latigazo cervical y cefaleas tensionales provocadas por estrés o malas posturas prolongadas.',
-    img: '/images/Foto%20confianza.jpg'
+    img: '/images/confianza.jpg'
   },
   {
     title: 'Hombro y Manguito Rotador',
     description: 'Rehabilitación de tendinopatías y calcificaciones, bursitis e inestabilidades para recuperar el rango de movimiento completo sin dolor.',
-    img: '/images/Paciente%203%20.jpg'
+    img: '/images/paciente-3.jpg'
   },
   {
     title: 'Rodilla y Tendinitis',
     description: 'Tratamientos específicos para tendinopatía rotuliana, síndrome de la cintilla iliotibial, esguinces de ligamentos cruzados y meniscopatías.',
-    img: '/images/Camilla%201.jpg'
+    img: '/images/camilla-2.jpg'
   },
   {
     title: 'Ecografía Musculoesquelética',
     description: 'Evaluación ecográfica en tiempo real para visualizar el estado exacto de tendones, músculos y ligamentos, mejorando la precisión del diagnóstico.',
-    img: '/images/Haciendo%20resonancia.jpg'
+    img: '/images/resonancia.jpg'
   },
   {
     title: 'Ejercicio Terapéutico',
     description: 'Prescripción de movimiento bajo supervisión para crear adaptaciones en el tejido, revertir atrofias y mejorar la funcionalidad a largo plazo.',
-    img: '/images/Desde%20fuera.jpg'
+    img: '/images/fuera.jpg'
   },
   {
     title: 'Rehabilitación Funcional',
     description: 'Acompañamiento en el paso final entre la camilla de tratamiento y el retorno de forma segura a tu disciplina o vida diaria habitual.',
-    img: '/images/Foto%20interior%202.jpg'
+    img: '/images/interior-2.jpg'
   }
 ];
 

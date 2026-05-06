@@ -35,7 +35,7 @@ export default function Home() {
         <section className="relative h-[85vh] min-h-[600px] bg-slate-900 rounded-3xl overflow-hidden flex flex-col justify-end p-8 md:p-16 text-white max-w-[1400px] mx-auto">
           {/* USER: Replace the src with your own actual photo of Alberto working with a patient */}
           <Image
-            src="/images/Paciente%202%20buena%20foto%20para%20debajo%20de%20encabezado.jpg"
+            src="/images/paciente-2.jpg"
             alt="Alberto trabajando con paciente"
             fill
             priority
@@ -144,7 +144,7 @@ export default function Home() {
             {/* Image 1: Camilla / Consulta */}
             <div className="md:col-span-5 md:row-span-2 relative rounded-3xl overflow-hidden min-h-[300px] md:min-h-0 bg-slate-100 group">
               <Image 
-                src="/images/Mejor%20foto%20camilla.jpg" 
+                src="/images/camilla.jpg" 
                 alt="Consulta de fisioterapia" 
                 fill 
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -161,7 +161,7 @@ export default function Home() {
             {/* Image 2: Alberto trabajando / Tratamiento manual */}
             <div className="md:col-span-7 md:row-span-1 relative rounded-3xl overflow-hidden min-h-[250px] md:min-h-0 bg-slate-100 group">
               <Image 
-                src="/images/Paciente%201%20boca%20abajo.jpg" 
+                src="/images/paciente-1-abajo.jpg" 
                 alt="Tratamiento manual" 
                 fill 
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -178,7 +178,7 @@ export default function Home() {
             {/* Image 3: Ecografía */}
             <div className="md:col-span-3 md:row-span-1 relative rounded-3xl overflow-hidden min-h-[250px] md:min-h-0 bg-slate-100 group">
               <Image 
-                src="/images/Haciendo%20resonancia.jpg" 
+                src="/images/resonancia.jpg" 
                 alt="Ecografía" 
                 fill 
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -216,7 +216,7 @@ export default function Home() {
               <div className="relative aspect-[3/4] w-full max-w-md mx-auto lg:max-w-none rounded-3xl overflow-hidden">
                 {/* USER: Replace this src with Alberto's portrait looking at the camera */}
                 <Image
-                  src="/images/Albero%20Pinilla.png"
+                  src="/images/alberto-pinilla.png"
                   alt="Alberto Pinilla"
                   fill
                   className="object-cover"

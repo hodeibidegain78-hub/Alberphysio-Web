@@ -126,7 +126,7 @@ export default function OpinionesPage() {
           className="w-full relative h-[400px] md:h-[550px] rounded-[2.5rem] overflow-hidden my-16 group"
         >
           <Image
-            src="/images/Mejor%20foto%20camilla.jpg"
+            src="/images/camilla.jpg"
             alt="Paciente en consulta"
             fill
             className="object-cover transition-transform duration-1000 group-hover:scale-105"
