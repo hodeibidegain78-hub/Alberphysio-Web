@@ -16,7 +16,7 @@ export default function SobreAlbertoPage() {
             className="lg:col-span-5 relative w-full aspect-[4/5] overflow-hidden rounded-3xl"
           >
             <Image
-              src="/Albero%20Pinilla.png"
+              src="/images/Albero%20Pinilla.png"
               alt="Alberto Pinilla Fisioterapeuta"
               fill
               className="object-cover"

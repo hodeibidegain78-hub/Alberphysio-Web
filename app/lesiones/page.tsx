@@ -60,7 +60,7 @@ export default function LesionesPage() {
 
         <div className="relative h-[600px] lg:h-full w-full min-h-[500px] rounded-3xl overflow-hidden">
           <Image
-            src="/Paciente%201.jpg"
+            src="/images/Paciente%201.jpg"
             alt="Tratamiento de lesiones fisioterapia"
             fill
             className="object-cover"
